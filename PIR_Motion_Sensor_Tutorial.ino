@@ -17,11 +17,10 @@ void loop(){
 
   
   if (val == HIGH) {            // check if the input is HIGH
-    digitalWrite(ledPin, HIGH);  // turn LED ON
-    //delay(2000); // wait 2 seconds before checking again to simulate lights in a room staying on for a small amount of time when motion is no longer detected.
+    digitalWrite(ledPin, HIGH);  // turn LED ON. Could be used to run any task when motion is detected.
     }
    else {
-    digitalWrite(ledPin, LOW); // turn LED OFF
-    //Constantly check when the light is not on to make sure motion is caught as soon as possible.
+    digitalWrite(ledPin, LOW); // turn LED OFF. Could be used to run any task when motion is no longer detected
+  
   }
 }
